@@ -32,6 +32,7 @@ export const Login = () => {
           placeholder="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           type="email"
@@ -39,6 +40,7 @@ export const Login = () => {
           placeholder="e-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="password"
@@ -46,6 +48,7 @@ export const Login = () => {
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <button type="submit" className="submit-btn">
           Entrar
